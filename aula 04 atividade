@@ -1,0 +1,62 @@
+Aqui vai um exemplo simples de **função para cadastro de login em Python**, com **comentários bem explicados** (ideal pra iniciante 👇):
+
+```python
+# Função para criar um cadastro de login
+def cadastrar_usuario():
+    # Criamos um dicionário vazio para armazenar os dados do usuário
+    usuarios = {}
+
+    # Solicitamos ao usuário que digite um nome de usuário
+    username = input("Digite um nome de usuário: ")
+
+    # Verificamos se o nome de usuário já existe no sistema
+    if username in usuarios:
+        print("Usuário já existe! Tente outro nome.")
+        return  # Encerra a função se o usuário já existir
+
+    # Solicitamos que o usuário digite uma senha
+    senha = input("Digite uma senha: ")
+
+    # Confirmamos a senha para evitar erros de digitação
+    confirmar_senha = input("Confirme a senha: ")
+
+    # Verificamos se as duas senhas são iguais
+    if senha != confirmar_senha:
+        print("As senhas não coincidem!")
+        return  # Encerra a função se as senhas forem diferentes
+
+    # Se tudo estiver correto, salvamos o usuário no dicionário
+    usuarios[username] = senha
+
+    # Mensagem de sucesso
+    print("Cadastro realizado com sucesso!")
+
+    # Retornamos o dicionário com o usuário cadastrado
+    return usuarios
+
+
+# Chamando a função para testar o cadastro
+banco_de_usuarios = cadastrar_usuario()
+
+# Exibindo os dados cadastrados (apenas para teste)
+print("Usuários cadastrados:", banco_de_usuarios)
+```
+
+---
+
+### 💡 Explicação simples:
+
+* **Dicionário (`usuarios`)**: guarda usuário e senha.
+* **input()**: pega dados do usuário.
+* **if**: faz validações (usuário repetido, senha errada).
+* **return**: encerra a função quando dá erro ou retorna os dados.
+
+---
+
+Se quiser, posso melhorar esse código pra:
+
+* salvar vários usuários (tipo banco de dados simples)
+* fazer sistema de login depois do cadastro
+* esconder a senha (nível mais avançado)
+
+Só falar 👍
