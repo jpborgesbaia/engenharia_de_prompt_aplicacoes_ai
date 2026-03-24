@@ -54,9 +54,10 @@ print("Usuários cadastrados:", banco_de_usuarios)
 ---
 
 Se quiser, posso melhorar esse código pra:
-
 * salvar vários usuários (tipo banco de dados simples)
 * fazer sistema de login depois do cadastro
 * esconder a senha (nível mais avançado)
 
 Só falar 👍
+
+
